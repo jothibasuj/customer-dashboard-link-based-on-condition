@@ -94,8 +94,6 @@ class Current extends \Magento\Framework\View\Element\Template
      */
     protected function _toHtml()
     {
-        print_r($this->customerSession->getCustomerGroupId());
-        echo $this->_request->getModuleName();
             
         if (false != $this->getTemplate()) {
             return parent::_toHtml();
